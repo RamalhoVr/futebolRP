@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hud.css">
+</head>
+<body>
+    <div id="hud-container" style="display: none;">
+        <!-- Placar no topo central -->
+        <div id="scoreboard">
+            <div class="team" id="home-team">CASA</div>
+            <div class="score">
+                <span id="home-score">0</span>
+                <span>-</span>
+                <span id="away-score">0</span>
+            </div>
+            <div class="team" id="away-team">VISITANTE</div>
+        </div>
+        
+        <!-- Tempo -->
+        <div id="match-time">00:00</div>
+        
+        <!-- Avisos de jogo (GOL, Lateral, etc) -->
+        <div id="event-announcement" class="hidden"></div>
+        
+        <!-- Stamina e Posse -->
+        <div id="player-stats">
+            <div id="possession-indicator"></div>
+            <div id="stamina-container">
+                <div id="stamina-bar"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="hud.js"></script>
+</body>
+</html>

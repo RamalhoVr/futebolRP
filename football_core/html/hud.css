@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+    user-select: none;
+}
+
+body {
+    background-color: transparent;
+    overflow: hidden;
+}
+
+#hud-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Placar Topo Centro - Estilo FIFA 14 */
+#scoreboard {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.team {
+    padding: 10px 20px;
+    min-width: 120px;
+    text-align: center;
+}
+
+#home-team {
+    background: linear-gradient(90deg, rgba(200, 0, 0, 0.5) 0%, transparent 100%);
+}
+
+#away-team {
+    background: linear-gradient(-90deg, rgba(0, 0, 200, 0.5) 0%, transparent 100%);
+}
+
+.score {
+    background: white;
+    color: black;
+    padding: 10px 15px;
+    font-weight: 700;
+    display: flex;
+    gap: 10px;
+}
+
+/* Tempo da Partida */
+#match-time {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Stamina e Posse */
+#player-stats {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#possession-indicator {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid white;
+    transition: background 0.3s;
+}
+
+.has-possession {
+    background: #00ff00 !important;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+#stamina-container {
+    width: 200px;
+    height: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transform: skewX(-15deg);
+}
+
+#stamina-bar {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #00b300, #00ff00);
+    transition: width 0.1s linear;
+}
+
+/* Avisos no Centro */
+#event-announcement {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 0 20px rgba(0,0,0,0.8), 2px 2px 5px black;
+    text-transform: uppercase;
+    opacity: 1;
+    transition: opacity 0.5s;
+    letter-spacing: 5px;
+}
+
+.hidden {
+    opacity: 0 !important;
+}
