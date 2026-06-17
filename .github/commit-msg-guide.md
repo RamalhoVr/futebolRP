@@ -1,0 +1,4 @@
+- A descrição está no imperativo? (adiciona, corrige, refatora)
+- Tem menos de 72 caracteres?
+- O escopo está correto?
+- Se tem corpo: explica o porquê, não o quê?

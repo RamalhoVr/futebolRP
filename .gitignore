@@ -1,0 +1,6 @@
+node_modules/
+*.cfg
+dump.txt
+.env
+*.log
+/server-data/
